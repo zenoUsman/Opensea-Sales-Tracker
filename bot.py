@@ -121,7 +121,7 @@ async def send_discord(session, slug, event):
             },
             {
                 "name": "Transaction",
-                "value": f"[View Transaction](https://etherscan.io/tx/{event.get('transaction')})" if event.get("transaction") and str(event.get("transaction")).startswith("0x") else str(event.get("transaction", "Unknown")),
+                "value": f"[View Transaction](https://polygonscan.com//tx/{event.get('transaction')})" if event.get("transaction") and str(event.get("transaction")).startswith("0x") else str(event.get("transaction", "Unknown")),
                 "inline": False
             }
         ],
